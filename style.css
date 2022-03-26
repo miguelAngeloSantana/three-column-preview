@@ -1,0 +1,110 @@
+:root {
+    --bc-csedans: #e28525;
+    --bc-csuvs: #016972;
+    --bc-cluxury: #00403f;
+    --cl-h2: hsl(0, 0%, 95%);
+    --cl-p: hsla(0, 0%, 100%, 0.75);
+    --bc-btt: #FFFFFF;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+.conteiner {
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.conteiner .column {
+    max-width: 220px;
+    height: 350px;
+    padding: 30px;
+}
+
+
+/*Configurando a caixa sedans*/
+.col-sedans {
+    background-color: var(--bc-csedans);
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+}
+
+.col-sedans a {
+    color: var(--bc-csedans);
+}
+
+
+
+/*Configurando a caixa suvs*/
+.col-suvs {
+    background-color: var(--bc-csuvs);
+    padding: 30px;
+}
+
+.col-suvs a {
+    color: var(--bc-csuvs);
+}
+
+
+/*Configurando a caixa luxury*/
+
+.col-luxury {
+    background-color:  var(--bc-cluxury);
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.col-luxury a {
+    color: var(--bc-cluxury);
+}
+
+
+/*Configurando os textos*/
+.column .text-conteiner h2 {
+    color: var(--cl-h2);
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.column .text-conteiner p {
+    color: var(--cl-p);
+}
+
+
+.column .text-conteiner a {
+    text-decoration: none;
+    background-color: var(--bc-btt);
+    padding: 13px 27px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 70px;
+    cursor: pointer;
+    border: 2px solid var(--bc-btt);
+}
+
+
+@media (min-width:1024px) {
+    .conteiner {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 300px;
+    }
+
+    .col-sedans {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .col-luxury {
+        border-radius: 0 10px 10px 0;
+    }
+}
